@@ -7,10 +7,10 @@
         const password = document.getElementById('password').value;
 
         if (email && password) {
-            alert('Connexion réussie ! (Simulée)');
+            alert('Connexion réussie !);
             // Ici, vous ajouteriez le code pour envoyer les données au serveur
         } else {
-            alert('Veuillez remplir tous les champs.');
+            alert('Veuillez remplir tous les champs pour continuer.');
         }
     });
 </script>
