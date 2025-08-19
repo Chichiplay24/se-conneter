@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Bienvenue sur votre compte</h1>
+        <h2 class="form-title">Se connecter</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Adresse e-mail" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Mot de passe" required>
+            </div>
+            <button type="submit" class="login-button">Se connecter</button>
+        </form>
+        <p class="signup-text">
+            Vous n'avez pas de compte ? <a href="#" class="signup-link">S'inscrire</a>
+        </p>
+    </div>
+
+    <script>
+        const form = document.getElementById('login-form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Empêche la soumission du formulaire par défaut
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email && password) {
+                alert('Connexion réussie ! (Simulée)');
+                // Ici, vous ajouteriez le code pour envoyer les données au serveur
+            } else {
+                alert('Veuillez remplir tous les champs.');
+            }
+        });
+    </script>
+</body>
+</html>
